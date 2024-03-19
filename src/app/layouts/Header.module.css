@@ -1,0 +1,27 @@
+/* components/Layout/Header.module.css */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 2.5rem;
+  color: #3a3737;
+  text-transform: uppercase;
+  background-color: #fafafa;
+}
+
+
+.logoContainer {
+  display: flex;
+  flex-direction: column;
+  margin-left: 5rem;
+  align-items: center;
+  
+}
+
+.subText {
+  margin-top: 0.3rem;
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-align: center;
+  letter-spacing: 0.1rem;
+}

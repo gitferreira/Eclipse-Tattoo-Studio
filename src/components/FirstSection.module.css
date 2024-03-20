@@ -1,0 +1,51 @@
+.container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 400px; 
+    margin-top: 0rem;
+    flex-direction: column;
+    border-top: 10px solid #dea758;
+    max-width: 100%;
+    overflow-y: hidden;
+
+   
+}
+
+.textContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100vw;
+    max-width: 1000px; /* Adjust maximum width as needed */
+    margin-top: -20vh;
+}
+
+.mainText {
+    width: 40vw;
+    font-size: 4rem;
+
+}
+
+.secondaryText {
+    display: flex;
+    flex-direction: column;
+    width: 60vw;
+    padding-left: 2rem;
+    border-left: 1px solid #dea758 ;
+
+}
+
+.title {
+    font-size: 1.5rem;
+    color: #dea758;
+}
+
+.story {
+font-size: 1.2rem;
+font-weight: 700;
+}
+
+.underline {
+    border-bottom: 2px #dea758 solid;
+}

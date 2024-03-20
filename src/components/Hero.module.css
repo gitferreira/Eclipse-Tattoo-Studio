@@ -1,171 +1,201 @@
 .container {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    height: 90vh; /* Set container height to viewport height */
-    background-image: url('/bg-hero.avif');
-    background-size: cover;
-    background-position: center;
-    background-color: rgba(104, 54, 54, 0.788);
-  }
-  
-  .imageContainer {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-  }
-  
-  .heroImage {
-    width: 40%;
-    margin-left: -8.5rem;
-  }
-  
-  .textContainer {
-    color: #ffffff;
-    position: absolute;
-    top: 45vh;
-    right: 30vw;
-    transform: translateY(-50%);
-    text-align: left;
-    width: 50vw;
-    z-index: 2;
-    padding: 1rem;
-  }
-  
-  .mainText {
-    font-size: 5rem;
-    max-width: 100px;
-    margin-bottom: 1rem;
-    text-transform: uppercase;
-    line-height: 4.5rem;
-  }
-  
-  .secondaryText {
-    font-size: 1rem;
-    color: #ffffff;
-    margin-left: 6rem;
+  position: relative;
+  overflow: hidden;
+  max-width: 100%; /* Limit container width to viewport width */
+  height: 1600px; /* Set container height to viewport height */
 
-    padding: 0.5rem;
-  }
   
-  .underline {
-    border-bottom: 2px solid #dea758;
-  }
-  
-  .button {
-    font-weight: 700;
-    margin-left: 20vw;
-    margin-top: 3rem;
-    letter-spacing: 0.1rem;
-    padding: 0.5rem 1.5rem;
-    border-radius: 0px;
-    display: inline-block;
-    vertical-align: middle;
-    -webkit-transform: translateZ(0);
-    transform: translateZ(0);
-    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
-    -moz-osx-font-smoothing: grayscale;
-    position: relative;
-    overflow: hidden;
-    background: #dea758;
-    -webkit-transition-property: color;
-    transition-property: color;
-    -webkit-transition-duration: 0.3s;
-    transition-duration: 0.3s;
-    color: #4c4d4ee1;
-  }
-  
-  .button:before {
-    content: "";
-    position: absolute;
-    z-index: -1;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: #000100;
-    border-radius: 100%;
-    -webkit-transform: scale(0);
-    transform: scale(0);
-    -webkit-transition-property: transform;
-    transition-property: transform;
-    -webkit-transition-duration: 0.2s;
-    transition-duration: 0.2s;
-    -webkit-transition-timing-function: ease-out;
-    transition-timing-function: ease-out;
-  }
-  
-  .button:hover,
-  .button:focus,
-  .button:active {
-    color: white;
-  }
-  
-  .button:hover:before,
-  .button:focus:before,
-  .button:active:before {
-    -webkit-transform: scale(2);
-    transform: scale(2);
-  }
-  
-  .imgWithEffect {
-    --s: 16px;  
-    --b: 3px;   
-    --w: 0; 
-    --c: #dea758;
-    
-    width: var(--w);
-    aspect-ratio: 1;
-    object-fit: cover;
-    padding: var(--s);
-    --_g: #0000 0%, var(--c) 0;
-    background:
-      conic-gradient(from 90deg  at top    var(--b) left  var(--b), var(--_g)) 
-        var(--_p, -5%) var(--_p, -5%),
-      conic-gradient(from 180deg at top    var(--b) right var(--b), var(--_g)) 
-        calc(100% - var(--_p, -5%)) var(--_p, -5%),
-      conic-gradient(from 0deg   at bottom var(--b) left  var(--b), var(--_g)) 
-        var(--_p, -5%) calc(100% - var(--_p, -5%)),
-      conic-gradient(from -90deg at bottom var(--b) right var(--b), var(--_g)) 
-        calc(100% - var(--_p, -5%)) calc(100% - var(--_p, -5%));
-    background-size: 20% 20%; 
-    background-repeat: no-repeat;
-    outline: calc(var(--w)/2) solid rgba(175, 0, 0, 0.333);
-    outline-offset: calc(var(--w)/-2 - var(--s));
-    clip-path: polygon(50% 0, 100% 50%, 50% 100%, 0 50%);
-    transition: .4s;
-    cursor: pointer;
-  }
-  
-  .imgWithEffect:hover {
-    outline-offset: 2px;
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
-    --_p: calc(var(--s)/4);
-    transition: .3s, background-position .3s .35s;
-    z-index: 4;
-  }
-  
-  .galleryContainer {
-    position: absolute;
-    top: 60%;
-    right: -10%;
-    transform: translateY(-50%);
-    text-align: left;
-    width: 50%;
-    z-index: 1;
-  }
-  
-  .gallery1 {
-    position: absolute;
-    top: 30%;
+}
+
+.fakeContainer {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  height: 1000px; /* Set container height to viewport height */
+  max-width: 100%; /* Limit container width to viewport width */
+  background-image: url("/EditedBg.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+
+}
+
+.textContainer {
+  display: flex;
+  flex-direction: column;
+  color: #ffffff;
+  justify-content: center;
+  margin-bottom: 10%;
+  text-align: center;
+  align-items: center;
+  width: 50vw;
+  z-index: 2;
+  padding: 1rem;
+}
+
+.mainText {
+  display: flex;
+  justify-content: center;
+  font-size: 5rem;
+  max-width: 100px;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  line-height: 4.5rem;
+}
+
+.secondaryText {
+  display: flex;
+  flex-direction: column;
+  font-size: 1rem;
+  color: #ffffff;
+  padding: 0.5rem;
+  width: 50vw;
+  flex-wrap: wrap;
+  margin-bottom: 1rem;
+}
+
+.line1 {
+  font-size: 1.5rem;
+  margin-left: -0.7rem;
+  margin-bottom: -1.2rem;
+  color: #000100;
+  font-weight: 600;
+  z-index: 2;
+}
+
+.line2 {
+  z-index: 1;
+  font-size: 1.5rem;
+  color: #dea758;
+  font-weight: 400;
+  margin-left: 0.7rem;
+}
+.underline {
+  border-bottom: 2px solid #dea758;
+}
+
+.button {
+  border: 2px solid #000100;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-weight: 100;
+  margin-top: 1rem;
+  letter-spacing: 0.1rem;
+  padding: 0.5rem 1.5rem;
+  border-radius: 0px;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  position: relative;
+  overflow: hidden;
+  background: white;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  color: #000100;
+}
+
+.button:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #000100;
+
+  border-radius: 100%;
+  -webkit-transform: scale(0);
+  transform: scale(0);
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+
+.button:hover,
+.button:focus,
+.button:active {
+  color: white;
+  border: white 2px solid;
+}
+
+.button:hover:before,
+.button:focus:before,
+.button:active:before {
+  -webkit-transform: scale(2);
+  transform: scale(2);
+}
+
+.imgWithEffect {
+  --s: 16px;
+  --b: 3px;
+  --w: 0;
+  --c: #dea758;
+
+  width: var(--w);
+  aspect-ratio: 1;
+  object-fit: cover;
+  padding: var(--s);
+  --_g: #0000 0%, var(--c) 0;
+  background: conic-gradient(
+        from 90deg at top var(--b) left var(--b),
+        var(--_g)
+      )
+      var(--_p, -5%) var(--_p, -5%),
+    conic-gradient(from 180deg at top var(--b) right var(--b), var(--_g))
+      calc(100% - var(--_p, -5%)) var(--_p, -5%),
+    conic-gradient(from 0deg at bottom var(--b) left var(--b), var(--_g))
+      var(--_p, -5%) calc(100% - var(--_p, -5%)),
+    conic-gradient(from -90deg at bottom var(--b) right var(--b), var(--_g))
+      calc(100% - var(--_p, -5%)) calc(100% - var(--_p, -5%));
+  background-size: 20% 20%;
+  background-repeat: no-repeat;
+  outline: calc(var(--w) / 2) solid rgba(175, 0, 0, 0.333);
+  outline-offset: calc(var(--w) / -2 - var(--s));
+  clip-path: polygon(50% 0, 100% 50%, 50% 100%, 0 50%);
+  transition: 0.4s;
+  cursor: pointer;
+}
+
+.imgWithEffect:hover {
+  outline-offset: 2px;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  --_p: calc(var(--s) / 4);
+  transition: 0.3s, background-position 0.3s 0.35s;
+  z-index: 4;
+}
+
+.galleryContainer {
+  position: absolute;
+  top: 25%;
+  right: -10%;
+  transform: translateY(-50%);
+  text-align: left;
+  width: 50%;
+  z-index: 10;
+}
+
+.gallery1 {
+  position: absolute; 
+  top: 30%;
   right: -15.8%;
   transform: translateY(-6%) rotate(0deg);
   text-align: left;
   width: 80%; /* Adjust the width as needed */
   z-index: 3;
+  border: 10px solid #dea758;
 }
 
 .gallery2 {
@@ -176,16 +206,109 @@
   text-align: left;
   width: 60%; /* Adjust the width as needed */
   z-index: 2;
-
+  border: 10px solid #dea758;
 }
 .gallery3 {
   position: absolute;
   top: 30%;
-  right:45%;
+  right: 45%;
   transform: translateY(-15%) rotate(0deg);
   text-align: left;
   width: 40%; /* Adjust the width as needed */
   z-index: 1;
+  border: 10px solid #dea758;
 }
 
+@media screen and (min-width: 2100px) {
+  .mainText {
+    font-size: 7rem;
+    line-height: 6rem;
+  }
 
+  .line1 {
+    font-size: 2rem;
+    margin-left: -0.7rem;
+    margin-bottom: -1.5rem;
+    font-weight: 600;
+    z-index: 2;
+  }
+
+  .line2 {
+    z-index: 1;
+    font-size: 2rem;
+    font-weight: 400;
+    margin-left: 0.7rem;
+  }
+}
+
+@media screen and (max-width: 1900px) {
+  .textContainer {
+    justify-content: flex-start;
+    margin-top: 10vh;
+  }
+
+  .mainText {
+    font-size: 3.5rem;
+    line-height: 3.5rem;
+  }
+
+  .line1 {
+    font-size: 1.5rem;
+    margin-left: -0.7rem;
+    margin-bottom: -1.1rem;
+    color: #000100;
+    font-weight: 600;
+    z-index: 2;
+  }
+
+  .line2 {
+    z-index: 1;
+    font-size: 1.5rem;
+    color: white;
+    font-weight: 400;
+    margin-left: 0.7rem;
+    white-space: nowrap;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  .container {
+
+  }
+
+  .galleryContainer {
+    display: none;
+  }
+
+  .secondaryText {
+    padding: 1rem;
+  }
+
+  .button {
+    white-space: nowrap;
+  }
+
+  .line1 {
+    display: none;
+  }
+
+  .line2 {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .textContainer {
+    justify-content: flex-start;
+    margin-top: 7vh;
+  }
+
+  .mainText {
+    font-size: 2rem;
+    line-height: 2rem;
+  }
+
+  .secondaryText {
+    font-size: 0.4rem;
+  }
+}

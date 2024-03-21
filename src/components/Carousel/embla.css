@@ -1,10 +1,12 @@
 .embla {
+     z-index: 1;
     max-width: 80vw;
     margin: auto;
-    margin-top: -10rem;
+    margin-top: -3rem;
     --slide-height: 30rem;
     --slide-spacing: 3rem;
     --slide-size: 150%;
+    background-color: transparent;
   }
   .embla__viewport {
     overflow: hidden;

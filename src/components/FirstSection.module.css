@@ -1,51 +1,104 @@
 .container {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    height: 400px; 
-    margin-top: 0rem;
-    flex-direction: column;
-    border-top: 10px solid #dea758;
-    max-width: 100%;
-    overflow-y: hidden;
-
-   
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 400px;
+  margin-top: 0rem;
+  flex-direction: column;
+  border-top: 10px solid #ffbaba;
+  max-width: 100%;
+  overflow-y: hidden;
+  background-image: url("/wave2.png");
+  background-size: cover;
+  background-position: 100px -500px;
+  background-repeat: no-repeat;
+  z-index: 3;
 }
 
 .textContainer {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    width: 100vw;
-    max-width: 1000px; /* Adjust maximum width as needed */
-    margin-top: -20vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100vw;
+  max-width: 1000px; /* Adjust maximum width as needed */
+  margin-top: -20vh;
 }
 
 .mainText {
-    width: 40vw;
-    font-size: 4rem;
-
+  width: 40vw;
+  font-size: 4rem;
 }
 
 .secondaryText {
-    display: flex;
-    flex-direction: column;
-    width: 60vw;
-    padding-left: 2rem;
-    border-left: 1px solid #dea758 ;
-
+  display: flex;
+  flex-direction: column;
+  width: 60vw;
+  padding-left: 2rem;
+  border-left: 2px solid #be2635;
 }
 
 .title {
-    font-size: 1.5rem;
-    color: #dea758;
+  font-size: 1.5rem;
+  color: #be2635;
 }
 
 .story {
-font-size: 1.2rem;
-font-weight: 700;
+  font-size: 1.2rem;
+  font-weight: 700;
 }
 
 .underline {
-    border-bottom: 2px #dea758 solid;
+  border-bottom: 2px #be2635 solid;
 }
+
+@media screen and (max-width: 1000px) {
+  .textContainer {
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+  }
+
+  .mainText {
+    display: flex;
+    width: 80vw;
+    font-size: 2rem;
+    justify-self: flex-start;
+    text-align: left;
+  }
+
+  .secondaryText {
+    margin-top: 1rem;
+  }
+
+  .line1 {
+    margin-right: 0.5rem;
+    text-align: left;
+  }
+}
+
+@media screen and (max-width: 750px) {
+
+    .container {
+        margin-bottom: -3rem;
+    }
+  .title {
+    font-size: 1rem;
+  }
+
+  .story {
+    font-size: 1rem;
+  }
+
+
+}
+
+
+@media screen and (max-width: 500px) {
+    .title {
+      font-size: 1rem;
+    }
+  
+    .story {
+      font-size: 0.8rem;
+    }
+  }

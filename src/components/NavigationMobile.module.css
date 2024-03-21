@@ -20,7 +20,7 @@
     -moz-osx-font-smoothing: grayscale;
     position: relative;
     overflow: hidden;
-    background: #dea758;
+    background: #ffbaba;
     transition-property: color;
     transition-duration: 0.3s;
 
@@ -81,7 +81,7 @@
   .menu li {
     padding: 10px 20px;
     text-align: end;
-    border-bottom: 0.5px solid #dea758;
+    border-bottom: 0.5px solid #ffbaba;
   }
   
   .menu a {

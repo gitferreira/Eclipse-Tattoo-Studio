@@ -67,12 +67,12 @@
 .line2 {
   z-index: 1;
   font-size: 1.5rem;
-  color: #dea758;
+  color: #ffbaba;
   font-weight: 400;
   margin-left: 0.7rem;
 }
 .underline {
-  border-bottom: 2px solid #dea758;
+  border-bottom: 2px solid #ffbaba;
 }
 
 .button {
@@ -142,7 +142,7 @@
   --s: 16px;
   --b: 3px;
   --w: 0;
-  --c: #dea758;
+  --c: #ffbaba;
 
   width: var(--w);
   aspect-ratio: 1;
@@ -195,7 +195,7 @@
   text-align: left;
   width: 80%; /* Adjust the width as needed */
   z-index: 3;
-  border: 10px solid #dea758;
+  border: 10px solid #ffbaba;
 }
 
 .gallery2 {
@@ -206,7 +206,7 @@
   text-align: left;
   width: 60%; /* Adjust the width as needed */
   z-index: 2;
-  border: 10px solid #dea758;
+  border: 10px solid #ffbaba;
 }
 .gallery3 {
   position: absolute;
@@ -216,7 +216,7 @@
   text-align: left;
   width: 40%; /* Adjust the width as needed */
   z-index: 1;
-  border: 10px solid #dea758;
+  border: 10px solid #ffbaba;
 }
 
 @media screen and (min-width: 2100px) {
@@ -231,6 +231,7 @@
     margin-bottom: -1.5rem;
     font-weight: 600;
     z-index: 2;
+    color: white;
   }
 
   .line2 {
@@ -272,9 +273,6 @@
 }
 
 @media screen and (max-width: 1300px) {
-  .container {
-
-  }
 
   .galleryContainer {
     display: none;
@@ -298,6 +296,14 @@
 }
 
 @media screen and (max-width: 500px) {
+
+  .container {
+    height: 1100px;
+  }
+
+  .fakeContainer{
+    height: 600px;
+  }
   .textContainer {
     justify-content: flex-start;
     margin-top: 7vh;

@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./FirstSection.module.css";
 import { Monsieur_La_Doulaise, Monoton, Barlow_Condensed, Rubik_Mono_One } from "next/font/google";
-import Carousel from "./Carousel/Carousel";
+
 
 const monoton = Monoton({ subsets: ["latin"], weight: ["400"] });
 const barlow = Barlow_Condensed({ subsets: ["latin"], weight: ["300"] });
@@ -12,7 +12,7 @@ export default function FirstSection() {
     <section className={styles.container}>
       <div className={styles.textContainer}>
         <div className={`${styles.mainText} ${monoton.className}`}>
-          <h1 className={styles.line1}>OUR</h1>
+          <h1 className={styles.line1}>OUR </h1>
           <h1 className={styles.line2}>STUDIO</h1>
         </div>
         <div className={styles.secondaryText}>
@@ -30,7 +30,6 @@ export default function FirstSection() {
         </div>
  
       </div>
-
     </section>
   );
 }

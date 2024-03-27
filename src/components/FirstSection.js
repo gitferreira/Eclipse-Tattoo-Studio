@@ -1,34 +1,74 @@
 import React from "react";
 import styles from "./FirstSection.module.css";
-import { Monsieur_La_Doulaise, Monoton, Barlow_Condensed, Rubik_Mono_One } from "next/font/google";
+import { Montserrat, Rubik_Mono_One } from "next/font/google";
+import Carousel from "./Carousel/Carousel";
+import Image from "next/image";
 
-
-const monoton = Monoton({ subsets: ["latin"], weight: ["400"] });
-const barlow = Barlow_Condensed({ subsets: ["latin"], weight: ["300"] });
 const rubik = Rubik_Mono_One({ subsets: ["latin"], weight: ["400"] });
+const montse = Montserrat({ subsets: ["latin"], weight: ["400"] });
 
 export default function FirstSection() {
   return (
     <section className={styles.container}>
-      <div className={styles.textContainer}>
-        <div className={`${styles.mainText} ${monoton.className}`}>
-          <h1 className={styles.line1}>OUR </h1>
-          <h1 className={styles.line2}>STUDIO</h1>
-        </div>
-        <div className={styles.secondaryText}>
-          <h2 className={`${styles.title} ${rubik.className}`}>How we started</h2>
-          <p className={`${styles.story} ${barlow.className}`}>
-            In the vibrant heart of <span className={styles.underline}>Malasaña, Madrid</span>, Eclipse Tattoo Studio was
-            born from a shared passion for art and individual expression. It all
-            began with a chance encounter between two artists, drawn together by
-            their love for ink and creativity. Fuelled by their dreams and
-            determination, they transformed a humble space into a sanctuary for
-            self-expression, where each stroke of the needle tells a unique
-            story. With dedication and artistry, Eclipse Tattoo Studio became a
-            beacon of creativity in the bustling streets of Malasaña.
+      <div className={styles.mainContainer}>
+        <div className={`${styles.textContainer} ${rubik.className}`}>
+          <p className={styles.subHeading}>Who we are</p>
+          <div className={styles.heading}>
+            <h2 className={styles.line1}>Take your body</h2>
+            <h2 className={styles.line2}>to the next level</h2>
+          </div>
+          <p className={`${montse.className} ${styles.text}`}>
+            Embark on a journey of <strong> self-expression </strong> and <strong> empowerment  </strong> as you step
+            into our tattoo studio. With passion and precision, our artists
+            craft <strong> personalized designs </strong>  to adorn your skin and speak to your
+            soul.
           </p>
+          <div className={styles.icons}>
+            <div className={styles.iconContainer}>
+              <Image
+                className={styles.iconImage}
+                src="/oI.png"
+                width={180}
+                height={180}
+                alt="Picture of the author"
+              />
+              <p className={styles.iconText}>1.Share your Idea </p>
+            </div>
+            <div className={styles.iconContainer}>
+              <Image
+                className={styles.iconImage}
+                src="/dD.png"
+                width={180}
+                height={180}
+                alt="Picture of the author"
+              />
+              <p className={styles.iconText} >2.Get your design online</p>
+            </div>
+
+            <div className={`${styles.iconContainer} ${styles.iconContainer3}`}>
+              <Image
+                className={styles.iconImage}
+                src="/i.png"
+                width={180}
+                height={180}
+                alt="Picture of the author"
+              />
+              <p className={styles.iconText}>3.Secure the date!</p>
+            </div>
+          </div>
+          <button href="" className={styles.button}>
+            Book a Session
+          </button>
         </div>
- 
+      </div>
+      <div className={styles.logoContainer}>
+        <Image
+          className={styles.logoImage}
+          src="/eclipse (2).png"
+          width={1500}
+          height={1500}
+          alt="Picture of the author"
+        />
       </div>
     </section>
   );

@@ -1,0 +1,10 @@
+.container {
+    height: 1000px;
+    background-image: url("/blackBg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.mainContainer {
+    margin-bottom: 6rem;
+}

@@ -1,35 +1,72 @@
 .container {
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
-    margin-top: 5rem;
+    justify-content: center;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
     align-items: center;
-    height: 2000px;
+    height: 100%;
     max-width: 100%;
-    background-image: url("/wave.png");
+
+    background-image: url("/bgFs.jpg");
     background-size: cover;
-    background-position: 0px -100px;
+    background-position: center;
     background-repeat: no-repeat;
     overflow-y: hidden;
     color: white !important;
     z-index: 4;
+    border: solid 1px black;
+    
   }
-  
+
+  .paddingContainer {
+    margin-left: 700px;
+    margin-right: 700px;
+  }
+
+
   .mainContainer {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    width: 100vw;
-    max-width: 1000px; /* Adjust maximum width as needed */
+    width: 100%;
+    max-width: 100%;
     height: 400px;
-    margin-top: 2rem    ;
+    margin-top: 20px    ;
+    border: solid 1px black;
+    
+  }
+
+
+  .headingContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .subHeading {
+    font-size: 1.5rem;
+    color: white;
+    width: fit-content;
+    padding: 0.4rem 0.9rem 0.2rem 0.9rem;
+    background-color: black;
+
   }
   
-  .heading { 
+  .heading {
+    margin-top: 1rem;
+    font-size: 3rem;
+    line-height: 2rem;
+    margin-bottom: 3rem;
     color: black;
-    font-size: 4rem;
   }
+  
+  .line2 {
+    color: #ffbaba;
+  }
+  
   .mainText {
     width: 50vw;
     font-size: 4rem;
@@ -74,7 +111,7 @@
     border-bottom: 2px black solid;
   }
 
-  @media screen and (max-width: 1500px) {
+  @media screen and (max-width: 1200px) {
     .mainContainer {
       flex-direction: column;
       height: 100%;
@@ -88,7 +125,7 @@
     }
 
     .artistsContainer {
-      height: 100vh;
+      height: 900px;
       display: flex;
       flex-direction: column;
       justify-content: center;

@@ -1,104 +1,150 @@
 .container {
   display: flex;
-  justify-content: flex-end;
+  flex-direction: row;
+  justify-content: space-around;
   align-items: center;
-  height: 400px;
-  margin-top: 0rem;
-  flex-direction: column;
+  height: 100%;
   border-top: 10px solid #ffbaba;
   max-width: 100%;
   overflow-y: hidden;
-  background-image: url("/wave2.png");
   background-size: cover;
-  background-position: 100px -500px;
   background-repeat: no-repeat;
-  z-index: 3;
+  padding-left: 24rem;
+  padding-right: 24rem;
+  background-image: url("/bgFs.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+ 
+}
+
+.logoContainer {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+
+.logoImage {
 }
 
 .textContainer {
+  margin-top: 5rem;
+}
+
+.icons {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  width: 100vw;
-  max-width: 1000px; /* Adjust maximum width as needed */
-  margin-top: -20vh;
+  margin-top: 1rem;
 }
 
-.mainText {
-  width: 40vw;
-  font-size: 4rem;
+.subHeading {
+  font-size: 1.5rem;
+  color: white;
+  width: fit-content;
+  padding: 0.4rem 0.9rem 0.2rem 0.9rem;
+  background-color: black;
 }
 
-.secondaryText {
+.heading {
+  margin-top: 1rem;
+  font-size: 3rem;
+  line-height: 2rem;
+}
+
+.line2 {
+  margin-left: 1.7rem;
+  color: #ffbaba;
+}
+
+.text {
+  width: 60%;
+  margin-top: 2rem;
+  font-size: 1.3rem;
+}
+
+.iconContainer {
   display: flex;
   flex-direction: column;
-  width: 60vw;
-  padding-left: 2rem;
-  border-left: 2px solid #be2635;
+  border-right: 3px solid black;
+  margin-left: 0.3rem;
+  justify-content: center;
+  align-items: center;
 }
 
-.title {
-  font-size: 1.5rem;
-  color: #be2635;
+.iconContainer3 {
+  border-right: none !important;
 }
 
-.story {
-  font-size: 1.2rem;
-  font-weight: 700;
+.iconImage {
 }
 
-.underline {
-  border-bottom: 2px #be2635 solid;
+.iconText {
+  font-size: 0.7rem;
+  width: 50%;
+  text-align: center;
 }
 
-@media screen and (max-width: 1000px) {
-  .textContainer {
-    flex-direction: column;
-    align-items: center;
-    text-align: left;
-  }
-
-  .mainText {
-    display: flex;
-    width: 80vw;
-    font-size: 2rem;
-    justify-self: flex-start;
-    text-align: left;
-  }
-
-  .secondaryText {
-    margin-top: 1rem;
-  }
-
-  .line1 {
-    margin-right: 0.5rem;
-    text-align: left;
-  }
+.button {
+  border: 2px solid #000100;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-weight: 100;
+  margin-top: 3.5rem;
+  letter-spacing: 0.1rem;
+  padding: 0.5rem 1.5rem;
+  border-radius: 0px;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  position: relative;
+  overflow: hidden;
+  background: #000100;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  color: white;
 }
 
-@media screen and (max-width: 750px) {
+.button:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: white;
 
-    .container {
-        margin-bottom: -3rem;
-    }
-  .title {
-    font-size: 1rem;
-  }
-
-  .story {
-    font-size: 1rem;
-  }
-
-
+  border-radius: 100%;
+  -webkit-transform: scale(0);
+  transform: scale(0);
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
 }
 
+.button:hover,
+.button:focus,
+.button:active {
+  color: #000100;
+  border: #000100 2px solid;
+}
 
-@media screen and (max-width: 500px) {
-    .title {
-      font-size: 1rem;
-    }
-  
-    .story {
-      font-size: 0.8rem;
-    }
-  }
+.button:hover:before,
+.button:focus:before,
+.button:active:before {
+  -webkit-transform: scale(2);
+  transform: scale(2);
+}

@@ -16,16 +16,33 @@
   }
 }
 
-
-
 body {
   max-width: 100vw;
   height: 100vh;
   overflow-x: hidden;
+
+
+}
+
+.mainContainer {
+  padding-left: 24rem;
+  padding-right: 24rem;
 }
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  h2 {
+    font-size: 3rem !important;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  h2 {
+    font-size: 2rem !important;
   }
 }

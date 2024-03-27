@@ -2,7 +2,9 @@
   position: relative;
   overflow: hidden;
   max-width: 100%; /* Limit container width to viewport width */
-  height: 1600px; /* Set container height to viewport height */
+  max-height: 100%; /* Set container height to viewport height */
+  padding-left: 0 !important;
+  padding-right: 0 !important;
 
   
 }
@@ -11,7 +13,7 @@
   position: relative;
   display: flex;
   justify-content: center;
-  height: 1000px; /* Set container height to viewport height */
+  height: 95vh; /* Set container height to viewport height */
   max-width: 100%; /* Limit container width to viewport width */
   background-image: url("/EditedBg.png");
   background-size: cover;
@@ -297,17 +299,17 @@
 
 @media screen and (max-width: 500px) {
 
-  .container {
+  /* .container {
     height: 1100px;
   }
 
   .fakeContainer{
     height: 600px;
-  }
-  .textContainer {
+  } */
+  /* .textContainer {
     justify-content: flex-start;
     margin-top: 7vh;
-  }
+  } */
 
   .mainText {
     font-size: 2rem;

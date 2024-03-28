@@ -3,8 +3,34 @@
     background-image: url("/blackBg.jpg");
     background-size: cover;
     background-repeat: no-repeat;
+    padding-left: 20%;
+    padding-right: 20%;
+    padding-top: 4rem;
 }
 
 .mainContainer {
     margin-bottom: 6rem;
 }
+
+.subHeading {
+    font-size: 1.5rem;
+    color: black;
+    width: fit-content;
+    padding: 0.4rem 0.9rem 0.2rem 0.9rem;
+    background-color: white;
+  }
+  
+  .heading {
+    margin-top: 1rem;
+    font-size: 3rem;
+    line-height: 2rem;
+  }
+
+  .line1 {
+    color: white;
+  }
+  
+  .line2 {
+    margin-left: 1.7rem;
+    color: #ffbaba;
+  }
